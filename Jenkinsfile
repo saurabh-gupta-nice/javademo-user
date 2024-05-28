@@ -6,7 +6,7 @@ pipeline{
          stages {
               stage(" checkout the code "){
                   steps{
-                      checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/cloud-dev-user/javademo.git']])
+                      checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/saurabh-gupta-nice/javademo-user.git']])
                   }
               }
               stage("build") {
