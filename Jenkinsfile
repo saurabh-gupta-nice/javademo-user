@@ -14,6 +14,11 @@ pipeline{
                 sh 'mvn package'
                    }
                 }
+         stage("Notify") {
+                  steps {
+                           echo "Build success"
+                  }
+         }
          }  
          post {
   always {
